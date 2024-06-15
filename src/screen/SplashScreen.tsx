@@ -1,8 +1,9 @@
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {RootStackParams} from '../route';
+import Box from '../components/Box';
 
 export const SplashScreen = () => {
   const navigation =
@@ -11,12 +12,12 @@ export const SplashScreen = () => {
     navigation.navigate('LoginScreen');
   };
   return (
-    <View style={styles.root}>
-      <Text>Splash Screen</Text>
+    <Box.Gradient>
+      <Text>Guardio</Text>
       <TouchableOpacity onPress={onClick}>
         <Text>Press</Text>
       </TouchableOpacity>
-    </View>
+    </Box.Gradient>
   );
 };
 
