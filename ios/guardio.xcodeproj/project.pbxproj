@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1920B7D9D5984A71A22899FD /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A857D23A086D4F6DA4B7BF83 /* Inter-Bold.ttf */; };
 		394BE88F999544BDB9EB4180 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82909B6D3F2A45B384824BA3 /* Inter-Medium.ttf */; };
+		3EA7374BB74C46A1AD148D00 /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66FCF36B5A544788859411D0 /* Inter-Italic.otf */; };
 		6CEEF8E27FCB4FA48580904C /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9065F0D7F7AF40C292DF8778 /* Inter-Light.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-guardio-guardioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-guardio-guardioTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-guardio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guardio.release.xcconfig"; path = "Target Support Files/Pods-guardio/Pods-guardio.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-guardio-guardioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guardio-guardioTests.debug.xcconfig"; path = "Target Support Files/Pods-guardio-guardioTests/Pods-guardio-guardioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-guardio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-guardio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66FCF36B5A544788859411D0 /* Inter-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Italic.otf"; path = "../src/assets/fonts/Inter-Italic.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = guardio/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82909B6D3F2A45B384824BA3 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-guardio-guardioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guardio-guardioTests.release.xcconfig"; path = "Target Support Files/Pods-guardio-guardioTests/Pods-guardio-guardioTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				0F44D2CE50B14BB6805758E9 /* Inter-Regular.ttf */,
 				B8F6F94AE9314C4299D4E992 /* Inter-SemiBold.ttf */,
 				F65395AE5B9C4850A4FFFE8C /* Inter-Thin.ttf */,
+				66FCF36B5A544788859411D0 /* Inter-Italic.otf */,
 			);
 			name = Resources;
 			path = "";
@@ -307,6 +310,7 @@
 				CCD8D0EF61A142BF9AF32A6A /* Inter-Regular.ttf in Resources */,
 				C30B3745C5754829966653DA /* Inter-SemiBold.ttf in Resources */,
 				B3BCFF02A3424B60BAB8A8A4 /* Inter-Thin.ttf in Resources */,
+				3EA7374BB74C46A1AD148D00 /* Inter-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
