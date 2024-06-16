@@ -83,6 +83,9 @@ const Colors = {
     1: `#EBC894`,
     2: '#B49EF4',
   },
+  Transparent: {
+    1: 'rgba(255, 255, 255, 0.6)',
+  },
 };
 
 export default Colors;
