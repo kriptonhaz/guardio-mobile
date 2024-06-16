@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
+import Box from '@components/Box';
 
 export const LoginScreen = () => {
   return (
-    <View style={styles.root}>
+    <Box.Gradient>
       <Text>Login Screen</Text>
-    </View>
+    </Box.Gradient>
   );
 };
 
