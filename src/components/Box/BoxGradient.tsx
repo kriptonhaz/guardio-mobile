@@ -1,6 +1,8 @@
 import React from 'react';
-import {StyleSheet, View, ViewStyle} from 'react-native';
+import {ViewStyle} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import Colors from '../../theme/colors';
+import {Styles} from '../../theme/styles';
 
 interface BoxGradientProps extends React.PropsWithChildren {
   containerStyle?: ViewStyle;
@@ -9,20 +11,12 @@ interface BoxGradientProps extends React.PropsWithChildren {
 export const BoxGradient = (props: BoxGradientProps) => {
   return (
     <LinearGradient
-      colors={['#EBC894', '#B49EF4']}
+      colors={[Colors.Gradient[1], Colors.Gradient[2]]}
       useAngle={true}
       angle={145}
-      style={[styles.root, props.containerStyle]}
+      style={[Styles.backgroundScreen, props.containerStyle]}
       testID="box">
       {props.children}
     </LinearGradient>
   );
 };
-
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
