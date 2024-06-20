@@ -13,7 +13,7 @@ const Styles = StyleSheet.create({
     height: 'auto',
     backgroundColor: Colors.Transparent[1],
     borderRadius: mvs(20),
-    padding: ms(24),
+    padding: ms(20),
     justifyContent: 'center',
     alignItems: 'center',
   },
