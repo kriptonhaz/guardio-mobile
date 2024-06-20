@@ -1,5 +1,5 @@
 import React from 'react';
-import {RootStackScreen} from './route';
+import {RootStackScreen} from '@route';
 import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
