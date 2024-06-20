@@ -29,6 +29,8 @@ export type IFeatherIconName =
   | 'camera'
   | 'cast'
   | 'chevron-down'
+  | 'chevron-left'
+  | 'chevron-right'
   | 'chevron-up'
   | 'circle'
   | 'clipboard'
