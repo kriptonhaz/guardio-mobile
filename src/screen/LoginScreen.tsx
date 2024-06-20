@@ -24,11 +24,7 @@ import {RootStackParams} from '@route';
 export const LoginScreen = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParams>>();
-  const {
-    control,
-    handleSubmit,
-    formState: {errors},
-  } = useForm<ILogin>({
+  const {control, handleSubmit} = useForm<ILogin>({
     mode: 'onChange',
     resolver: yupResolver(SchemaLogin),
     defaultValues: {
@@ -93,7 +89,7 @@ export const LoginScreen = () => {
             <Controller
               control={control}
               name="password"
-              render={({field: {onChange, value}}) => (
+              render={({field: {onChange, value}, formState: {errors}}) => (
                 <TextField
                   containerStyle={{marginTop: heightPercentage(6)}}
                   placeholder="Password"
