@@ -5,7 +5,7 @@ module.exports = {
     [
       'module-resolver',
       {
-        root: ['./src'],
+        root: ['.'],
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
         alias: {
           '@assets': './src/assets',
@@ -15,6 +15,7 @@ module.exports = {
           '@screen': './src/screen',
           '@theme': './src/theme',
           '@utils': './src/utils',
+          '@validation': './src/validation',
         },
       },
     ],
