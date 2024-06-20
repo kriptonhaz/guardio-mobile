@@ -14,7 +14,7 @@ export const SplashScreen = () => {
     setTimeout(() => {
       navigation.reset({
         index: 0,
-        routes: [{name: 'LoginScreen'}],
+        routes: [{name: 'BoardingScreen'}],
       });
     }, 3000);
   }, []);
