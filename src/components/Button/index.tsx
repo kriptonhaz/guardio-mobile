@@ -10,6 +10,7 @@ import {
   TextStyle,
 } from 'react-native';
 import {mvs} from 'react-native-size-matters';
+import {ButtonIcon} from './ButtonIcon';
 
 interface ButtonProps extends TouchableOpacityProps {
   label?: string;
@@ -45,5 +46,7 @@ const styles = StyleSheet.create({
     color: Theme.Colors.default.Neutral[100],
   },
 });
+
+Button.Icon = ButtonIcon;
 
 export default Button;
