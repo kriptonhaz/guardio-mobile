@@ -1,16 +1,16 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "@route": ["src/route/index"],
-      "@screen/*": ["src/screen/*"],
-      "@theme": ["src/theme/index"],
-      "@utils/*": ["src/utils/*"],
-      "@validation/*": ["src/validation/*"]
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@route": ["route/index"],
+      "@screen/*": ["screen/*"],
+      "@theme": ["theme/index"],
+      "@utils/*": ["utils/*"],
+      "@validation/*": ["validation/*"]
     }
   }
 }
