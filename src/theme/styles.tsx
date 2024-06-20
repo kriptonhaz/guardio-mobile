@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {ms, mvs} from 'react-native-size-matters';
 import Colors from './colors';
+import {heightPercentage, widthPercentage} from '@utils/dimensionFormat';
 
 const Styles = StyleSheet.create({
   backgroundScreen: {
@@ -16,6 +17,11 @@ const Styles = StyleSheet.create({
     padding: ms(20),
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  btnBackNav: {
+    position: 'absolute',
+    left: widthPercentage(20),
+    top: heightPercentage(56),
   },
 });
 
