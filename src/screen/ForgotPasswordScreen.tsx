@@ -15,7 +15,7 @@ import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
-import {SchemaForgot} from 'validation/forgot.validation';
+import {SchemaForgot} from '@validation/forgot.validation';
 
 export const ForgotPasswordScreen = () => {
   const navigation =
