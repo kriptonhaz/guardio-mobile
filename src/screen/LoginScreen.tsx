@@ -40,7 +40,12 @@ export const LoginScreen = () => {
   };
 
   const onLogin: SubmitHandler<ILogin> = data => {
+    // TODO: will fix on wiring
     console.log(data);
+    navigation.reset({
+      index: 0,
+      routes: [{name: 'MainTab'}],
+    });
   };
 
   const onForgotPassword = () => {
