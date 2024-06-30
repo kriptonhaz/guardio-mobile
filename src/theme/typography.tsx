@@ -98,35 +98,35 @@ const TypographyItalic: ITypography = {
     fontSize: normalize(56),
   },
   h2: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(48),
   },
   h3: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(40),
   },
   h4: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(32),
   },
   h5: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(24),
   },
   h6: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(20),
   },
   lg: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(16),
   },
   md: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(14),
   },
   sm: {
-    fontFamily: Font.InterRegular,
+    fontFamily: Font.InterItalic,
     fontSize: normalize(12),
   },
 };
