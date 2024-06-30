@@ -13,6 +13,7 @@ export type CardTaskProps = {
   message: string;
   type: string;
   variant?: 'error' | 'success';
+  onPress?: () => void;
 };
 export const CardTask = (props: CardTaskProps) => {
   const {date, time, message, type, variant} = props;
@@ -45,11 +46,20 @@ export const CardTask = (props: CardTaskProps) => {
         </Text>
         <Chip
           containerStyle={{
-            backgroundColor: Theme.Colors.default.Error[300],
+            backgroundColor:
+              variant === 'error'
+                ? Theme.Colors.default.Error[300]
+                : Theme.Colors.default.Success[300],
             width: widthPercentageToDP('20%'),
             marginTop: heightPercentage(6),
           }}>
-          <Text>{type}</Text>
+          <Text
+            style={[
+              Theme.Typography.TypographyRegular.sm,
+              {color: Theme.Colors.default.Neutral[100]},
+            ]}>
+            {type}
+          </Text>
         </Chip>
       </View>
       <Icon
