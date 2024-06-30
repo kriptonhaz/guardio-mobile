@@ -3,22 +3,17 @@ import {dataStatisticAttendance} from '@assets/data/statisticAttendance.data';
 import Box from '@components/Box';
 import {CardStatisic} from '@components/Card/CardStatistic';
 import {CardTable} from '@components/Card/CardTable';
+import {Navbar} from '@components/Navbar';
 import {Select} from '@components/Select';
 import Theme from '@theme';
 import {heightPercentage} from '@utils/dimensionFormat';
-import {FlatList, StyleSheet, Text, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 import {mvs} from 'react-native-size-matters';
 
 export const AttendanceScreen = () => {
   return (
     <Box.Gradient containerStyle={styles.root}>
-      <Text
-        style={[
-          Theme.Typography.TypographyBold.h6,
-          {color: Theme.Colors.default.Neutral[0]},
-        ]}>
-        Attendance
-      </Text>
+      <Navbar label="Attendance" />
       <Select
         type="date"
         value="September 2024"
