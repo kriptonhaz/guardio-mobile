@@ -1,6 +1,7 @@
 import {dataStatisticAttendance} from '@assets/data/statisticAttendance.data';
 import Box from '@components/Box';
 import {CardStatisic} from '@components/Card/CardStatistic';
+import {Select} from '@components/Select';
 import Theme from '@theme';
 import {heightPercentage} from '@utils/dimensionFormat';
 import {StyleSheet, Text} from 'react-native';
@@ -15,6 +16,11 @@ export const AttendanceScreen = () => {
         ]}>
         Attendance
       </Text>
+      <Select
+        type="date"
+        value="September 2024"
+        containerStyle={{marginTop: heightPercentage(39)}}
+      />
       <CardStatisic
         dataStatistic={dataStatisticAttendance}
         containerStyle={{marginTop: heightPercentage(14)}}
