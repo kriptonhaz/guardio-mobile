@@ -19,6 +19,7 @@ interface ButtonIconProps extends TouchableOpacityProps {
   iconColor?: string;
   iconSize?: number;
   iconStyle?: ViewStyle;
+  variant?: 'circle' | 'rounded';
 }
 
 export const ButtonIcon = (props: ButtonIconProps) => {
@@ -27,9 +28,16 @@ export const ButtonIcon = (props: ButtonIconProps) => {
     iconColor = Theme.Colors.default.Neutral[0],
     iconSize = mvs(24),
     iconStyle,
+    variant = 'circle',
   } = props;
   return (
-    <TouchableOpacity style={[styles.root, props.containerStyle]} {...props}>
+    <TouchableOpacity
+      style={[
+        styles.root,
+        variant === 'circle' ? styles.variantCircle : styles.variantRounded,
+        props.containerStyle,
+      ]}
+      {...props}>
       <Icon
         name={iconName}
         size={iconSize}
@@ -42,12 +50,20 @@ export const ButtonIcon = (props: ButtonIconProps) => {
 
 const styles = StyleSheet.create({
   root: {
-    width: widthPercentage(44),
     backgroundColor: Theme.Colors.default.Neutral[90],
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  variantCircle: {
+    width: widthPercentage(44),
     height: undefined,
     aspectRatio: 1 / 1,
     borderRadius: mvs(20),
-    justifyContent: 'center',
-    alignItems: 'center',
+  },
+  variantRounded: {
+    width: widthPercentage(50),
+    height: undefined,
+    aspectRatio: 1 / 1,
+    borderRadius: mvs(20),
   },
 });
