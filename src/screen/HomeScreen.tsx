@@ -163,6 +163,7 @@ export const HomeScreen = () => {
             message={item.message}
             type={item.type}
             variant={item.variant}
+            onPress={() => null}
           />
         )}
       />
