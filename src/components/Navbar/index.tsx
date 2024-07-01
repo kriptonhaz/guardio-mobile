@@ -23,8 +23,9 @@ export const Navbar = (props: NavbarProps) => {
       )}
       <Text
         style={[
-          Theme.Typography.TypographyBold.h6,
+          Theme.Typography.TypographyRegular.h6,
           {
+            fontWeight: 700,
             color: Theme.Colors.default.Neutral[0],
             paddingTop: isBack || rightIcon ? 0 : heightPercentage(11),
           },
